@@ -17,9 +17,16 @@ public class DemoController {
 
     /*create employee*/
     @PostMapping("/addEmployee") // http://localhost:8083/addEmployee
-    public void createEmployee() {
+    public String createEmployee() {
         System.out.println("createEmployee");
-        employeeService.addEmployee();
+        List<Employee> employeeList = employeeService.addEmployee();
+        /*check if employee created return Success else return Failure*/
+        if (employeeList.size() > 0) {
+            return "Employee Created Successfully";
+        } else {
+            return "Employee Creation Failed";
+        }
+
     }
 
     /*get employee*/
@@ -27,6 +34,14 @@ public class DemoController {
     public List<Employee> getEmployee() {
         System.out.println("getEmployee");
         return employeeService.getEmployee();
+
+    }
+
+    /* get all employee */
+    @GetMapping("/getAllEmployee") // http://localhost:8083/getAllEmployee
+    public void getAllEmployee() {
+        System.out.println("getAllEmployee");
+        employeeService.getAllEmployee();
 
     }
 }
