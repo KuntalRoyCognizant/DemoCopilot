@@ -1,17 +1,15 @@
-package com.copilot.democopilotspringboot.controller;
+package com.copilot.controller;
 
 import com.copilot.model.Employee;
 import com.copilot.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/Copilot")
 public class DemoController {
 
   @Autowired

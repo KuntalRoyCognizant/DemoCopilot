@@ -22,7 +22,7 @@ public class EmployeeService {
         employee.setSalary("80000");
         employee.setStatus("Active");
         employeeList.add(employee);
-        Employee employee1 = new Employee();
+        employee = new Employee();
         employee.setId(2);
         employee.setName("Jampa");
         employee.setAddress("Brisben, USA");
@@ -31,8 +31,8 @@ public class EmployeeService {
         employee.setDepartment("Testing");
         employee.setSalary("60000");
         employee.setStatus("Active");
-        employeeList.add(employee1);
-        Employee employee2 = new Employee();
+        employeeList.add(employee);
+        employee = new Employee();
         employee.setId(3);
         employee.setName("Sanjay");
         employee.setAddress("Pune, India");
@@ -41,8 +41,8 @@ public class EmployeeService {
         employee.setDepartment("HR");
         employee.setSalary("100000");
         employee.setStatus("Active");
-        employeeList.add(employee2);
-        Employee employee3 = new Employee();
+        employeeList.add(employee);
+        employee = new Employee();
         employee.setId(4);
         employee.setName("Raj");
         employee.setAddress("Chicago, USA");
@@ -51,8 +51,8 @@ public class EmployeeService {
         employee.setDepartment("Engineering");
         employee.setSalary("50000");
         employee.setStatus("Active");
-        employeeList.add(employee3);
-        Employee employee4 = new Employee();
+        employeeList.add(employee);
+        employee = new Employee();
         employee.setId(5);
         employee.setName("Will");
         employee.setAddress("Missisaga, Canada");
@@ -61,7 +61,7 @@ public class EmployeeService {
         employee.setDepartment("CEO");
         employee.setSalary("180000");
         employee.setStatus("Active");
-        employeeList.add(employee4);
+        employeeList.add(employee);
 
 
 
